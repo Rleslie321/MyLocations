@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rest1"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:background="#E7FFE7">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:text="@string/menu" />
+
+    <EditText
+        android:id="@+id/appetizer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        android:hint="@string/app"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"/>
+
+    <EditText
+        android:id="@+id/entree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        android:hint="@string/entree"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"/>
+
+    <EditText
+        android:id="@+id/drink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        android:hint="@string/drink"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"/>
+
+    <EditText
+        android:id="@+id/dessert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapSentences"
+        android:hint="@string/dessert"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/restItemBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/skip"
+            android:onClick="skipAdding"/>
+
+        <Button
+            android:id="@+id/restItemBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/enter"
+            android:onClick="addImages"/>
+    </LinearLayout>
+
+</LinearLayout>

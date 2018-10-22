@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayBusiness"
+    android:background="#E7FFE7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/restScroll"
+        android:gravity="center|top"
+        android:paddingTop="50dp">
+
+        <TextView
+            android:id="@+id/businessName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/locationName"
+            android:textSize="24sp"
+            android:paddingBottom="20dp"/>
+
+        <RatingBar
+            android:id="@+id/businessRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:isIndicator="true"
+            android:theme="@style/RatingBar"
+            android:paddingBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/businessImg"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            app:srcCompat="@drawable/upload_pic"
+            android:contentDescription="@string/image_desc2"/>
+
+        <TextView
+            android:id="@+id/businessDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="10dp"
+            android:text="@string/desc"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/businessBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backToMap"
+            android:paddingTop="10dp"
+            android:text="@string/back" />
+    </LinearLayout>
+</ScrollView>

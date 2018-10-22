@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Location"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:paddingTop="50dp"
+    android:background="#E7FFE7">
+
+    <EditText
+        android:id="@+id/locationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/locationName"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:paddingBottom="20dp"/>
+
+    <RatingBar
+        android:id="@+id/locationRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="2.5"
+        android:theme="@style/RatingBar"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:spinnerMode="dropdown"/>
+
+    <EditText
+        android:id="@+id/locationDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:inputType="textMultiLine"
+        android:hint="@string/desc"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/locationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="callNext"
+        android:text="@string/enter" />
+</LinearLayout>

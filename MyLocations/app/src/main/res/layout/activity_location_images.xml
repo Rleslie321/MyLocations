@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationImages"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:background="#E7FFE7">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="@string/images"
+        android:paddingBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/locationImg"
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:contentDescription="@string/image_desc2"
+        app:srcCompat="@drawable/upload_pic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/picUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/upload" />
+
+        <Button
+            android:id="@+id/picBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/enter"
+            android:onClick="finishEdit"/>
+    </LinearLayout>
+
+</LinearLayout>
